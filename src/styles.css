@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+.main-text{
+    font-family: Gill Sans, Verdana;
+    color: #85144b;
+    text-align: center;
+}
+.center{
+    margin: auto;
+    width: 50%;
+}
+body{
+    background-color: #EBEDEF;
+}
+.button {
+    color: #85144b;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #CCD1D1;
+    border-radius: 4px;
+}
