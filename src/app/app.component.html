@@ -1,11 +1,13 @@
 <div class = "head">
   <h1 class="main-text"> GameStats </h1>
 </div>
+
 <nav class="center nav">
-  <a class="main-text record" [routerLink] = "['record']" [routerLinkActive] = "['active']"> Add a Game <i class="fa fa-plus"></i></a><br>
-  <a class="main-text" [routerLink] = "['games']" [routerLinkActive] = "['active']"> Games <i class="fa fa-gamepad"></i></a>
-  <a class="main-text" [routerLink] = "['stats']" [routerLinkActive] = "['active']"> Stats <i class="fa fa-bar-chart"></i></a>
-  <a class="main-text" [routerLink] = "['users']" [routerLinkActive] = "['active']"> Users <i class="fa fa-user"></i></a>
+  <a class="main-text record button" [routerLink] = "['record']" [routerLinkActive] = "['active']"> Add a Game <i class="fa fa-plus"></i></a><br>
+  <a class="main-text button" [routerLink] = "['games']" [routerLinkActive] = "['active']"> Games <i class="fa fa-gamepad"></i></a>
+  <a class="main-text button" [routerLink] = "['stats']" [routerLinkActive] = "['active']"> Stats <i class="fa fa-bar-chart"></i></a>
+  <a class="main-text button" [routerLink] = "['users']" [routerLinkActive] = "['active']"> Users <i class="fa fa-user"></i></a>
   
+
 </nav>
 <router-outlet></router-outlet>

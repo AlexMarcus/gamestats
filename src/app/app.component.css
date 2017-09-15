@@ -16,13 +16,9 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
     display: inline-block;
-    background-color: #CCD1D1;
     border-radius: 4px;
 }
-nav a.active {
-    color: #CCD1D1;
-    background-color: #85144b;
-}
+
 nav a.record {
     margin: 20px auto 20px auto;
     font-size: 25px;

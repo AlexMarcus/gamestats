@@ -11,6 +11,7 @@ import { AddUserComponent } from './components/add-user/add-user.component';
 import { RecordGameComponent } from './components/record-game/record-game.component';
 import { UsersComponent } from './components/users/users.component';
 import { GamesComponent } from './components/games/games.component'
+import { BlankComponent } from './components/blank/blank.component'
 
 const routes: Routes = [
   {
@@ -22,23 +23,23 @@ const routes: Routes = [
     path: 'users',
     component: UsersComponent,
     children: [
-      
+      {
+        path: 'add_user',
+        component: AddUserComponent,
+        outlet: 'adduser'
+      }
     ]
-  },
-  {
-    path: 'add_user',
-    component: AddUserComponent
   },
   {
     path: 'games',
     component: GamesComponent,
     children: [
-      
-    ]
-  },
-  {
+      {
         path: 'add_game',
-        component: AddGameComponent
+        component: AddGameComponent,
+        outlet: 'addgame'
+      }
+    ]
   },
   {
     path: 'record',

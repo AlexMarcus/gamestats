@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes }   from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+
+import {UserService} from './services/user.service'
 
 import { AppComponent } from './app.component';
 import { AddGameComponent } from './components/add-game/add-game.component';
@@ -13,7 +15,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { RecordGameComponent } from './components/record-game/record-game.component';
 import { UsersComponent } from './components/users/users.component';
-import { GamesComponent } from './components/games/games.component'
+import { GamesComponent } from './components/games/games.component';
+import { BlankComponent } from './components/blank/blank.component'
 
 @NgModule({
   declarations: [
@@ -24,13 +27,14 @@ import { GamesComponent } from './components/games/games.component'
     AddUserComponent,
     RecordGameComponent,
     UsersComponent,
-    GamesComponent
+    GamesComponent,
+    BlankComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

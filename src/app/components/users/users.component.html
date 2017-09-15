@@ -1,3 +1,20 @@
-<p>
-  users works!
-</p>
+<div class="title-div">
+  <h3 class = "main-text">Users</h3>
+  <a class="main-text button" [routerLink]="[{outlets: {adduser: ['add_user']}}]" [routerLinkActive]="['active']" >Add User</a>
+  <div style="clear:both"></div>
+</div>
+<router-outlet name="adduser"></router-outlet>
+<div id="userview">
+  <table class = "user-table">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+    </tr>
+    <tr *ngFor = "let user of users" class = "user-row">
+      <th class = "main-text">{{user.id}}</th>
+      <th class = "main-text"> {{user.name}}</th>
+    </tr>
+  </table>
+
+</div>
+

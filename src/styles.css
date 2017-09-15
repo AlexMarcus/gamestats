@@ -12,11 +12,19 @@ body{
     background-color: #EBEDEF;
 }
 .button {
+    background-color: #CCD1D1;
     color: #85144b;
     padding: 5px 10px;
     text-decoration: none;
     margin: 0 10px;
     display: inline-block;
-    background-color: #CCD1D1;
     border-radius: 4px;
+}
+.active {
+    color: #CCD1D1;
+    background-color: #85144b;
+}
+.title {
+    margin: 20px auto 10px auto;
+    width: 200px;
 }

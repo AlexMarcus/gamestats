@@ -1,4 +1,7 @@
+
 <p>
   games works!
 </p>
-<a class="main-text button" [routerLink]="['/','add_game']" >Add Game</a>
+<a class="main-text button" [routerLink]= "[{outlets: {addgame: ['add_game']}}]" [routerLinkActive]="['active']">Add Game</a>
+
+<router-outlet name="addgame"></router-outlet>
